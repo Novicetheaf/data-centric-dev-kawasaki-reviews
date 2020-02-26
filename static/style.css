@@ -1,3 +1,28 @@
-.motorcycle-background-image{
-    background-image: url('https://i.pinimg.com/originals/d5/e4/ab/d5e4ab2bf184775c091c0ae7747e4d53.jpg') center;
+
+body {
+        background: url(https://i.pinimg.com/originals/d5/e4/ab/d5e4ab2bf184775c091c0ae7747e4d53.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+nav{
+    background-color: transparent;
 }
+
+footer{
+    background-color: rgb(255, 206, 206);
+    height: 275px;
+    margin-top: 200px;
+}
+
+.custom-jumbotron{
+    margin-top: 375px;
+    background-color: #ffeded;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
