@@ -11,12 +11,6 @@ nav{
     background-color: transparent;
 }
 
-footer{
-    background-color: rgb(255, 206, 206);
-    height: 275px;
-    margin-top: 200px;
-}
-
 .custom-jumbotron{
     margin-top: 375px;
     background-color: #ffeded;
@@ -26,3 +20,24 @@ footer{
     text-align: center;
 }
 
+/*--------------------------------------------Footer Section*/
+footer{
+    background-color: #fff;
+    height: 120px;
+}
+
+.footer-icons{
+    font-size: 2.7em;
+    color: rgb(196, 23, 23, 0.82);
+}
+
+.footer-text{
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer{
+    background-color: rgb(255, 206, 206);
+    height: 275px;
+    margin-top: 200px;
+}
