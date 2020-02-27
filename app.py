@@ -21,9 +21,9 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/critic_reviews-search')
+@app.route('/critic_reviews_search')
 def critic_reviews_search():
-    return render_template('critic-reviews-search.html')
+    return render_template('critic-reviews-search.html', siteReview=mongo.db.siteReview.find())
 
 
 @app.route('/user_reviews')
@@ -33,7 +33,30 @@ def user_reviews():
 
 @app.route('/critic_reviews')
 def critic_reviews():
-    return render_template('critic-reviews.html')
+    return render_template('critic-reviews.html', siteReview=mongo.db.siteReview.find())
+
+
+# Sort motorcycles by model
+
+@app.route('/h2r_model')
+def h2r_model():
+    return render_template('filter-critic-motorcycle-reviews.html',
+                           siteReview=mongo.db.siteReview.find
+                           ({'model': 'Ninja H2R'}))
+
+
+@app.route('/vulcan_model')
+def vulcan_model():
+    return render_template('filter-critic-motorcycle-reviews.html',
+                           siteReview=mongo.db.siteReview.find
+                           ({'model': 'Vulcan S'}))
+
+
+@app.route('/zxr_model')
+def zxr_model():
+    return render_template('filter-critic-motorcycle-reviews.html',
+                           siteReview=mongo.db.siteReview.find
+                           ({'model': 'ZX-6R'}))
 
 
 if __name__ == '__main__':
