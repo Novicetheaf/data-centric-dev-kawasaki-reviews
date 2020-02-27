@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <!--Font Aw-->
     <script src="https://kit.fontawesome.com/4a795257bd.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link rel="stylesheet" href="static/critic-reviews.css" type="text/css">
+    {% block content_css %} {% endblock %}
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -33,13 +35,8 @@
 		</div>
 	</nav>
 
-	<div class="jumbotron custom-jumbotron">
-		<h1 class="display-4">Kawasaki Reviews!</h1>
-		<hr class="my-4">
-		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-		<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-	</div>
-    
+    {% block content %} {% endblock %}
+
     <!--Footer Section-->
     <footer>
         <div class="container">
