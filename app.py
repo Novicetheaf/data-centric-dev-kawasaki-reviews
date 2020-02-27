@@ -21,14 +21,19 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/critic_reviews')
-def critic_reviews():
-    return render_template('critic-reviews.html')
+@app.route('/critic_reviews-search')
+def critic_reviews_search():
+    return render_template('critic-reviews-search.html')
 
 
 @app.route('/user_reviews')
 def user_reviews():
     return render_template("user-reviews.html")
+
+
+@app.route('/critic_reviews')
+def critic_reviews():
+    return render_template('critic-reviews.html')
 
 
 if __name__ == '__main__':

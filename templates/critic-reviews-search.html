@@ -39,23 +39,16 @@
 <div class="card" style="width: 100vw">
   <img src="https://www.wallpaperup.com/uploads/wallpapers/2013/04/26/78787/34dfbaf4bd1cbca72626c5a11acb3596-700.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Model</h5>
-    <p>Overall Rating</p>
-    <p>Engine Size</p>
-    <p>Power</p>
-    <p>Price</p>
-    <p>Insurance Group</p>
-    <p>Seat Height</p>
-
-
+    <h5 class="card-title">Kawasaki Motorcycles</h5>
+    <p class="card-text">Not sure which bike you're looking for? choose below.</p>
     <div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Choose a bike
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Ninja H2R 1000</a>
-        <a class="dropdown-item" href="#">Vulcan 650</a>
-        <a class="dropdown-item" href="#">Ninja 600</a>
+        <a class="dropdown-item" href="{{ url_for('critic_reviews')}}">Ninja H2R 1000</a>
+        <a class="dropdown-item" href="{{ url_for('critic_reviews')}}">Vulcan 650</a>
+        <a class="dropdown-item" href="{{ url_for('critic_reviews')}}">Ninja 600</a>
     </div>
     </div>
   </div>
