@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <!--Modal Contact Form - Reference to: https://mdbootstrap.com/docs/jquery/modals/forms/-->
+    <!--Modal Add Review Form -->
     <div class="modal fade" id="modalAddReviewForm" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -105,34 +105,105 @@
                 </div>
                 <div class="modal-body mx-3">
                     <form id="form-submit">
-						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												    Choose your bike
-												  </button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item">H2R</a>
-								<a class="dropdown-item">Vulcan S</a>
-								<a class="dropdown-item">KLR 650</a>
-                                <a class="dropdown-item">ZX-6R</a>
-                                <a class="dropdown-item">Versys 1000</a>
-                                <a class="dropdown-item">Z900</a>
+
+                        <label for="model-select">Choose a model and get started!</label>
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="model-select">Kawasaki Models</label>
 							</div>
+							<select class="custom-select" id="model-select">
+						    <option selected>Choose...</option>
+						    <option value="h2r">H2R</option>
+						    <option value="vulcan">Vulcan S</option>
+						    <option value="klr">KLR 650</option>
+                            <option value="zx-r">ZX-6R</option>
+                            <option value="versys">Versys 1000</option>
+                            <option value="z900">Z900</option>
+						  </select>
+						</div>
+
+                        <label for="overall-rating">How would you rate your bike overall?</label>
+                        <div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="overall-rating">Overall Rating</label>
+							</div>
+							<select class="custom-select" id="overall-rating">
+						    <option selected>Choose...</option>
+						    <option value="★">★</option>
+						    <option value="★★">★★</option>
+						    <option value="★★★">★★★</option>
+                            <option value="★★★★">★★★★</option>
+                            <option value="★★★★★">★★★★★</option>
+						  </select>
 						</div>
 
                         <div class="form-group">
-                            <label for="fullname">Your Name</label>
-                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required/>
                         </div>
+
+                        <label>Your review breakdown below</label>
+                        <div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="ride-quality-and-brakes">Ride Quality & Brakes</label>
+							</div>
+							<select class="custom-select" id="ride-quality-and-brakes">
+						    <option selected>Choose...</option>
+						    <option value="★">★</option>
+						    <option value="★★">★★</option>
+						    <option value="★★★">★★★</option>
+                            <option value="★★★★">★★★★</option>
+                            <option value="★★★★★">★★★★★</option>
+						  </select>
+						</div>
+
+                        <div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="engine">Engine</label>
+							</div>
+							<select class="custom-select" id="engine">
+						    <option selected>Choose...</option>
+						    <option value="★">★</option>
+						    <option value="★★">★★</option>
+						    <option value="★★★">★★★</option>
+                            <option value="★★★★">★★★★</option>
+                            <option value="★★★★★">★★★★★</option>
+						  </select>
+						</div>
+
+                        <div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="build-quality-and-reliability">Build Quality & Reliability</label>
+							</div>
+							<select class="custom-select" id="build-quality-and-reliability">
+						    <option selected>Choose...</option>
+						    <option value="★">★</option>
+						    <option value="★★">★★</option>
+						    <option value="★★★">★★★</option>
+                            <option value="★★★★">★★★★</option>
+                            <option value="★★★★★">★★★★★</option>
+						  </select>
+						</div>       
+
+                        <div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="running-costs-and-value">Running Costs & Value</label>
+							</div>
+							<select class="custom-select" id="running-costs-and-value">
+						    <option selected>Choose...</option>
+						    <option value="★">★</option>
+						    <option value="★★">★★</option>
+						    <option value="★★★">★★★</option>
+                            <option value="★★★★">★★★★</option>
+                            <option value="★★★★★">★★★★★</option>
+						  </select>
+						</div>       
+
                         <div class="form-group">
-                            <label for="fullname">Overall Rating</label>
-                            <input type="text" name="overall-rating" class="form-control" id="fullname" placeholder="Overall Rating" required/>
-                        </div>
-                        <div class="form-group">
-                            <label for="projectsummary">Summary</label>
-                            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Your Summary" required></textarea>
+                            <label for="review-summary">Summary</label>
+                            <textarea rows="5" name="review-summary" class="form-control" id="review-summary" placeholder="Your Summary" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-danger">Add Review</button>
-                        <span id="submit-response"></span>
                     </form>
                 </div>
             </div>
