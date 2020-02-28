@@ -31,9 +31,9 @@ def user_reviews():
     return render_template("user-reviews.html", userReviews=mongo.db.ownerReviews.find())
 
 
-@app.route('/critic_reviews')
-def critic_reviews():
-    return render_template('critic-reviews.html', siteReview=mongo.db.siteReview.find())
+@app.route('/add_review')
+def add_review():
+    return render_template('add-review.html')
 
 
 # Sort motorcycles by model
