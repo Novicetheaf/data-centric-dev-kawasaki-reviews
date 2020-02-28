@@ -28,7 +28,7 @@ def critic_reviews_search():
 
 @app.route('/user_reviews')
 def user_reviews():
-    return render_template("user-reviews.html")
+    return render_template("user-reviews.html", userReviews=mongo.db.ownerReviews.find())
 
 
 @app.route('/critic_reviews')
