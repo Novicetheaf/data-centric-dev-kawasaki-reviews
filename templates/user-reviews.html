@@ -40,20 +40,21 @@
 	<div class="container">
 		<div class="row">
 
-{% for reviews in userReviews %}
+{% for reviews in userReview %}
 
 			<div class="col-sm-12 col-md-6 col-lg-4 px-0">
 				<div class="card py-0">
 					<img src="{{reviews.image}}"
                     class="card-img-top" alt="motorcycles">
 					<div class="card-body">
-						<h5 class="card-title">Model: {{reviews.model}}</h5>
-						<p>Overall Rating: {{reviews.overallRating}}</p>
-						<p>Engine Size: {{reviews.engineSize}}</p>
-						<p>Power: {{reviews.power}}</p>
-						<p>Price: {{reviews.price}}</p>
-						<p>Insurance Group: {{reviews.insuranceGroup}}</p>
-						<p>Seat Height: {{reviews.seatHeight}}</p>
+						<h5 class="card-title">Model: {{reviews.model_select}}</h5>
+                        <p>Reviewed by: {{reviews.name}}</p>
+						<p>Overall Rating: {{reviews.overall_rating}}</p>
+						<p>Ride quality & brakes: {{reviews.ride_quality_and_brakes}}</p>
+						<p>Engine: {{reviews.engine}}</p>
+						<p>Build quality & reliability: {{reviews.build_quality_and_reliability}}</p>
+                        <p>Running costs and value: {{reviews.running_costs_and_value}}</p>
+                        <p>Review summary: {{reviews.review_summary}}</p>
 
 						<p class="card-text">Not sure which bike you're looking for? choose below.</p>
 						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,6 +65,10 @@
 							<a class="dropdown-item" href="{{ url_for('vulcan_model')}}">Vulcan 650</a>
 							<a class="dropdown-item" href="{{ url_for('zxr_model')}}">Ninja 600</a>
 						</div>
+
+                        <a id="edit-review" href="" class="btn btn-light col" data-position="bottom" data-tooltip="Edit">Edit</a>
+                        <a id="delete-review" href="" class="btn btn-danger col">Delete</a>
+
 					</div>
 				</div>
 			</div>

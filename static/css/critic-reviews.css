@@ -4,3 +4,15 @@ img.d-block.w-100{
     margin: auto;
     box-shadow: 5px 5px 5x 5px rgba(219, 219, 219, 0.5);
 }
+
+@media only screen and (min-width: 750px) {
+    .card-body{
+        height: 600px;
+    }   
+}
+
+@media only screen and (min-width: 600px) {
+    .critic-reviews.card.py-0{
+        max-height: 800px;
+    }   
+}

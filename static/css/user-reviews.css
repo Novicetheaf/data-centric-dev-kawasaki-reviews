@@ -1,0 +1,13 @@
+#delete-review{
+    background: rgba(224, 87, 8, 0.82);
+}
+
+#edit-review{
+    background: #222425
+}
+
+@media only screen and (min-width: 600px) {
+    .card.py-0{
+        max-height: 550px;
+    }
+}

@@ -5,7 +5,7 @@ from bson.objectid import ObjectId
 
 from os import path
 if path.exists("env.py"):
-  import env 
+  import env
 
 app = Flask(__name__)
 
@@ -28,7 +28,7 @@ def critic_reviews_search():
 
 @app.route('/user_reviews')
 def user_reviews():
-    return render_template("user-reviews.html", userReviews=mongo.db.ownerReviews.find())
+    return render_template("user-reviews.html", userReview=mongo.db.ownerReviews.find())
 
 
 @app.route('/add_review')
@@ -63,7 +63,7 @@ def zxr_model():
 
 @app.route('/insert_review', methods=['POST'])
 def insert_review():
-    ownerReviews=mongo.db.ownerReviews
+    userReview=mongo.db.ownerReviews
 
     model_select = request.form['model_select']
     overall_rating = request.form['overall_rating']
@@ -73,7 +73,6 @@ def insert_review():
     build_quality_and_reliability = request.form['build_quality_and_reliability']
     running_costs_and_value = request.form['running_costs_and_value']
     review_summary = request.form['review_summary']
-
 
     review_form = {
         'model_select': model_select,
@@ -86,7 +85,8 @@ def insert_review():
         'review_summary': review_summary
     }
 
-    ownerReviews.insert_one(review_form)
+    userReview.insert_one(review_form)
+    return redirect(url_for('user_reviews'))
 
 
 if __name__ == '__main__':
