@@ -98,5 +98,12 @@ def remove_review(review_id):
     return redirect(url_for('user_reviews'))
 
 
+# Edit Recipe
+
+@app.route('/edit_review')
+def edit_review():
+    return render_template('edit-review.html')
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)
