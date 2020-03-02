@@ -100,9 +100,37 @@ def remove_review(review_id):
 
 # Edit Recipe
 
-@app.route('/edit_review')
-def edit_review():
+@app.route('/edit_page_review')
+def edit_page_review():
     return render_template('edit-review.html')
+
+
+@app.route('/edit_review', methods=['POST'])
+def edit_review():
+    userReview = mongo.db.ownerReviews
+
+    model_select = request.form['model_select']
+    overall_rating = request.form['overall_rating']
+    name = request.form['name']
+    ride_quality_and_brakes = request.form['ride_quality_and_brakes']
+    engine = request.form['engine']
+    build_quality_and_reliability = request.form[
+        'build_quality_and_reliability']
+    running_costs_and_value = request.form['running_costs_and_value']
+    review_summary = request.form['review_summary']
+
+    userReview.update({'_id': ObjectId(review_id)}, {
+        'model_select': model_select,
+        'overall_rating': overall_rating,
+        'name': name,
+        'ride_quality_and_brakes': ride_quality_and_brakes,
+        'engine': engine,
+        'build_quality_and_reliability': build_quality_and_reliability,
+        'running_costs_and_value': running_costs_and_value,
+        'review_summary': review_summary
+    })
+
+    return redirect(url_for('user_reviews'))
 
 
 if __name__ == '__main__':
