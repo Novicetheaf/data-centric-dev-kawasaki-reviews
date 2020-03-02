@@ -59,5 +59,35 @@ def zxr_model():
                            ({'model': 'ZX-6R'}))
 
 
+# add review
+
+@app.route('/insert_review', methods=['POST'])
+def insert_review():
+    ownerReviews=mongo.db.ownerReviews
+
+    model_select = request.form['model_select']
+    overall_rating = request.form['overall_rating']
+    name = request.form['name']
+    ride_quality_and_brakes = request.form['ride_quality_and_brakes']
+    engine = request.form['engine']
+    build_quality_and_reliability = request.form['build_quality_and_reliability']
+    running_costs_and_value = request.form['running_costs_and_value']
+    review_summary = request.form['review_summary']
+
+
+    review_form = {
+        'model_select': model_select,
+        'overall_rating': overall_rating,
+        'name': name,
+        'ride_quality_and_brakes': ride_quality_and_brakes,
+        'engine': engine,
+        'build_quality_and_reliability': build_quality_and_reliability,
+        'running_costs_and_value': running_costs_and_value,
+        'review_summary': review_summary
+    }
+
+    ownerReviews.insert_one(review_form)
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)
