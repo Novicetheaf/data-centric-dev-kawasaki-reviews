@@ -3,7 +3,8 @@
 }
 
 #edit-review{
-    background: #222425
+    background: #222425;
+    color: rgb(255, 255, 255);
 }
 
 @media only screen and (min-width: 600px) {

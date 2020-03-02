@@ -89,5 +89,14 @@ def insert_review():
     return redirect(url_for('user_reviews'))
 
 
+# delete user review
+
+@app.route('/remove_review/<review_id>')
+def remove_review(review_id):
+
+    mongo.db.ownerReviews.remove({'_id': ObjectId(review_id)})
+    return redirect(url_for('user_reviews'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)

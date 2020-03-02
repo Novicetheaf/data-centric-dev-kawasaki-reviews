@@ -67,7 +67,7 @@
 						</div>
 
                         <a id="edit-review" href="" class="btn btn-light col" data-position="bottom" data-tooltip="Edit">Edit</a>
-                        <a id="delete-review" href="" class="btn btn-danger col">Delete</a>
+                        <a id="delete-review" href="{{url_for('remove_review', review_id=reviews._id)}}" class="btn btn-danger col">Delete</a>
 
 					</div>
 				</div>
