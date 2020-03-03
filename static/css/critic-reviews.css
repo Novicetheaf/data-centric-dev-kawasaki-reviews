@@ -6,9 +6,10 @@ img.d-block.w-100{
 }
 
 .critic-reviews-body{
-    background: rgb(196, 196, 196);
-    padding-top: 200px;
+    background: rgba(196, 196, 196, 0.95);
+    padding-top: 175px;
     padding-bottom: 100px;
+    margin-top: 375px;
 }
 
 @media only screen and (min-width: 750px) {
