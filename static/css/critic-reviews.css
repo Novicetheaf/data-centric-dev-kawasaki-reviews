@@ -5,10 +5,19 @@ img.d-block.w-100{
     box-shadow: 5px 5px 5x 5px rgba(219, 219, 219, 0.5);
 }
 
+.critic-reviews-body{
+    background: rgb(196, 196, 196);
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
 @media only screen and (min-width: 750px) {
     .card-body{
         height: 600px;
     }   
+    .critic-reviews{
+        margin: 10px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
