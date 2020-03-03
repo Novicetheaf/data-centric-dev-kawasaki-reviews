@@ -16,7 +16,7 @@
 							<label class="input-group-text" for="model_select">Kawasaki Models</label>
 						</div>
 						<select class="custom-select" id="model_select" name="model_select">
-						    <option selected>Choose...</option>
+						    <option selected value="{{reviews.model_select}}">{{reviews.model_select}}</option>
 						    <option value="H2R">H2R</option>
 						    <option value="Vulcan S">Vulcan S</option>
 						    <option value="KLR 650">KLR 650</option>
@@ -32,7 +32,7 @@
 							<label class="input-group-text" for="overall_rating">Overall Rating</label>
 						</div>
 						<select class="custom-select" id="overall_rating" name="overall_rating">
-						    <option selected>Choose...</option>
+						    <option selected value="{{reviews.overall_rating}}">{{reviews.overall_rating}}</option>
 						    <option value="★">★</option>
 						    <option value="★★">★★</option>
 						    <option value="★★★">★★★</option>
@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="form-group">
-						<label for="name">Your Name</label>
+						<label for="name">{{reviews.name}}</label>
 						<input type="text" name="name" class="form-control" id="name" placeholder="Name" required/>
                         </div>
 

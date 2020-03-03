@@ -100,13 +100,14 @@ def remove_review(review_id):
 
 # Edit Recipe
 
-@app.route('/edit_page_review')
-def edit_page_review():
-    return render_template('edit-review.html')
+@app.route('/edit_page_review/<review_id>')
+def edit_reviews(review_id):
+    userReview = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    return render_template('edit-review.html', review=userReview)
 
 
-@app.route('/edit_review', methods=['POST'])
-def edit_review():
+@app.route('/edit_review/<review_id>', methods=['POST'])
+def edit_review(review_id):
     userReview = mongo.db.ownerReviews
 
     model_select = request.form['model_select']
