@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Emailjs & Init Emailjs -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script src="static/js/emailJsInit.js"></script>
+    <script src="{{ url_for('static', filename='js/emailJsInit.js') }}"></script>
     <!--Font Aw-->
     <script src="https://kit.fontawesome.com/4a795257bd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/css/style.css" type="text/css">
-    <link rel="stylesheet" href="static/css/critic-reviews.css" type="text/css">
-    <link rel="stylesheet" href="static/css/critic-reviews-search.css" type="text/css">
-    <link rel="stylesheet" href="static/css/user-reviews.css" type="text/css">
-    <link rel="stylesheet" href="static/css/edit-reviews.css" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/critic-reviews.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/critic-reviews-search.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/user-reviews.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/edit-reviews.css') }}" type="text/css">
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -221,6 +221,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <script src="static/js/sendEmail.js"></script>
+    <script src="{{ url_for('static', filename='js/sendEmail.js') }}"></script>
   </body>
 </html>
