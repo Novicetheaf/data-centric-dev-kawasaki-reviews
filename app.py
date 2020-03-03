@@ -31,11 +31,6 @@ def user_reviews():
     return render_template("user-reviews.html", userReview=mongo.db.ownerReviews.find())
 
 
-@app.route('/add_review')
-def add_review():
-    return render_template('add-review.html')
-
-
 # Sort motorcycles by model
 
 @app.route('/h2r_model')
@@ -61,16 +56,22 @@ def zxr_model():
 
 # add review
 
+@app.route('/add_review')
+def add_review():
+    return render_template('add-review.html')
+
+
 @app.route('/insert_review', methods=['POST'])
 def insert_review():
-    userReview=mongo.db.ownerReviews
+    userReview = mongo.db.ownerReviews
 
     model_select = request.form['model_select']
     overall_rating = request.form['overall_rating']
     name = request.form['name']
     ride_quality_and_brakes = request.form['ride_quality_and_brakes']
     engine = request.form['engine']
-    build_quality_and_reliability = request.form['build_quality_and_reliability']
+    build_quality_and_reliability = request.form[
+        'build_quality_and_reliability']
     running_costs_and_value = request.form['running_costs_and_value']
     review_summary = request.form['review_summary']
 
@@ -98,16 +99,16 @@ def remove_review(review_id):
     return redirect(url_for('user_reviews'))
 
 
-# Edit Recipe
+# Edit review
 
-@app.route('/edit_page_review/<review_id>')
-def edit_reviews(review_id):
-    userReview = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+@app.route('/edit_review/<review_id>', methods=['GET'])
+def edit_review(review_id):
+    userReview = mongo.db.ownerReviews.find_one({"_id": ObjectId(review_id)})
     return render_template('edit-review.html', review=userReview)
 
 
-@app.route('/edit_review/<review_id>', methods=['POST'])
-def edit_review(review_id):
+@app.route('/update_review/<review_id>', methods=["POST"])
+def update_review(review_id):
     userReview = mongo.db.ownerReviews
 
     model_select = request.form['model_select']
