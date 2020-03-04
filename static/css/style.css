@@ -4,10 +4,10 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Oswald', sans-serif;
 }
 
-.custom-jumbotron{
+.custom-jumbotron {
     margin-top: 265px;
     background-color: #ffededc9;
     max-width: 800px;
@@ -18,52 +18,59 @@ body {
 }
 /*--------------------------------------------Reviews*/
 
-.reviews-headhing{
+.reviews-headhing {
     text-align: center;
     text-shadow: 2px 3px rgba(0, 0, 0, 0.199);
     font-size: 3em;
     padding-bottom: 20px;
-     font-family: 'Trade Winds', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
+.reviews-body {
+    background: rgba(196, 196, 196, 0.95);
+    padding-top: 40px;
+    padding-bottom: 100px;
+    margin-top: 275px;
+    box-shadow: 0 10px 40px rgb(0, 0, 0);
 
+}
 
 /*--------------------------------------------Navbar Section*/
 
-.navbar-scroll{
+.navbar-scroll {
     background-color: transparent;
 }
 
-.scrolled{
+.scrolled {
     background-color: #222425c0;
 }
 
 /*--------------------------------------------Footer Section*/
 
-.footer-icons{
+.footer-icons {
     font-size: 2.7em;
     color: rgba(224, 87, 8, 0.82);
 }
 
-.footer-text{
+.footer-text {
     text-align: center;
     padding-top: 125px;
     color: rgba(224, 87, 8, 0.82);
 }
 
-footer{
+footer {
     background-color: #222425;
     height: 225px;
     margin-top: 200px;
 }
 
 /*--------------------------------------------Modal Form*/
-.modal-content{
+.modal-content {
     background-color: #222425f5;
     color: white;
 }
 
-button.btn.btn-danger{
+button.btn.btn-danger {
     background-color: rgba(224, 87, 8, 0.82);
 }
 

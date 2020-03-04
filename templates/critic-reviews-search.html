@@ -1,8 +1,8 @@
 {% extends 'base.html' %} {% block content %}
 
 
-<article class="critic-reviews-body">
- <h3 class="reviews-headhing">Critic Reviews </h3>
+<article class="reviews-body">
+ <h3 class="reviews-headhing">CRITIC REVIEW</h3>
 	<div class="container">
 		<div class="row">
 {% for review in siteReview %}
@@ -20,9 +20,9 @@
 						<p>Insurance Group: {{review.insuranceGroup}}</p>
 						<p>Seat Height: {{review.seatHeight}}</p>
 
-						<p class="card-text">Not sure which bike you're looking for? choose below.</p>
+						<p class="card-text">Want to view more details?</p>
 						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					        Choose a bike
+					        See more.
 					    </button>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 							<a class="dropdown-item" href="{{ url_for('h2r_model')}}">Ninja H2R 1000</a>

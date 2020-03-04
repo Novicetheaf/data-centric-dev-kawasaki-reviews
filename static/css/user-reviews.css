@@ -2,6 +2,10 @@
     margin-top: 300px;
 }
 
+.user-cards{
+    margin: 10px;
+}
+
 #delete-review{
     background: rgba(224, 87, 8, 0.82);
 }
