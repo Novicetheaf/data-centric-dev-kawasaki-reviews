@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Edmund O Callaghan | Kawasaki Reviews</title>
+    <!--bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Trade+Winds&display=swap" rel="stylesheet"> 
     <!-- Emailjs & Init Emailjs -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script src="{{ url_for('static', filename='js/emailJsInit.js') }}"></script>
@@ -17,7 +20,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/edit-reviews.css') }}" type="text/css">
   </head>
   <body>
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+	<nav id="navbar-scroll" class="navbar navbar-expand-lg navbar-dark fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="{{ url_for('index') }}">Kawasaki Reviews</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +36,7 @@
 						<a class="nav-link" href="{{ url_for('critic_reviews_search')}}">Critic Reviews</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{{ url_for('user_reviews') }}">User Review</a>
+						<a class="nav-link" href="{{ url_for('user_reviews') }}">User Reviews</a>
 					</li>
                     <li class="nav-item">
 						<a class="nav-link" href="" data-toggle="modal" data-target="#modalAddReviewForm">Add Review</a>
@@ -222,5 +225,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="{{ url_for('static', filename='js/sendEmail.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/global.js') }}"></script>
   </body>
 </html>

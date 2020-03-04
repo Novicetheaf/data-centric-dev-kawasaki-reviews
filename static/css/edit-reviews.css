@@ -4,7 +4,7 @@
     color: rgb(255, 255, 255);
 }
 
-#form-submit, h4.modal-title.w-100.font-weight-bold {
+#edit-review-form, h4.modal-title.w-100.font-weight-bold {
     background: rgba(33, 34, 33, 0.719);
     padding: 20px;
 }
