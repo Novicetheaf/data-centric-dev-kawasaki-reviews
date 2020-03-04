@@ -34,6 +34,10 @@ body {
     background-color: transparent;
 }
 
+.scrolled{
+    background-color: #222425c0;
+}
+
 /*--------------------------------------------Footer Section*/
 
 .footer-icons{
