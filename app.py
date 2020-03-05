@@ -16,7 +16,6 @@ app.config["MONGO_URI"] = os.environ.get('motorcycleURI')
 mongo = PyMongo(app)
 
 
-
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -40,19 +39,6 @@ def show_more(review_id):
     return render_template('filter-critic-motorcycle-reviews.html',
     siteReview=mongo.db.siteReview.find({'_id': ObjectId(review_id)}))
 
-
-@app.route('/vulcan_model')
-def vulcan_model():
-    return render_template('filter-critic-motorcycle-reviews.html',
-                           siteReview=mongo.db.siteReview.find
-                           ({'model': 'Vulcan S'}))
-
-
-@app.route('/zxr_model')
-def zxr_model():
-    return render_template('filter-critic-motorcycle-reviews.html',
-                           siteReview=mongo.db.siteReview.find
-                           ({'model': 'ZX-6R'}))
 
 
 # add review
