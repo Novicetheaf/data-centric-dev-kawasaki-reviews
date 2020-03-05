@@ -21,14 +21,9 @@
 						<p>Seat Height: {{review.seatHeight}}</p>
 
 						<p class="card-text">Want to view more details?</p>
-						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					        See more.
-					    </button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="{{ url_for('show_more', review_id=review._id)}}">Filter this model</a>
-							<a class="dropdown-item" href="{{ url_for('vulcan_model')}}">Vulcan 650</a>
-							<a class="dropdown-item" href="{{ url_for('zxr_model')}}">Ninja 600</a>
-						</div>
+						<a href="{{ url_for('show_more', review_id=review._id)}}">
+                            <button type="button" class="btn btn-secondary button-position">See more.</button>
+						</a>
 					</div>
 				</div>
 			</div>

@@ -1,21 +1,41 @@
-img.d-block.w-100{
+img.d-block.w-100 {
+
     padding-top: 65px;
     max-width: 1024px;
     margin: auto;
     box-shadow: 5px 5px 5x 5px rgba(219, 219, 219, 0.5);
+
+}
+
+.button-position {
+
+    position: relative;
+    bottom: 0px;
+
 }
 
 @media only screen and (min-width: 750px) {
-    .card-body{
-        height: 600px;
-    }   
-    .critic-reviews{
+
+    .card-body {
+        height: 500px;
+    } 
+
+    .critic-reviews {
         margin: 10px;
     }
+
+    .button-position {
+        position: relative;
+        bottom: -10px;
+    }
+
 }
 
+
 @media only screen and (min-width: 600px) {
+
     .critic-reviews.card.py-0{
         max-height: 800px;
-    }   
+    }  
+
 }
