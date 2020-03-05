@@ -88,7 +88,7 @@ def insert_review():
 
     elif model_select == "Vulcan S":
         image = vulcan_s_image
-   
+
     elif model_select == "KLR 650":
         image = klr_650_image
 
