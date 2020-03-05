@@ -25,7 +25,7 @@
 					        See more.
 					    </button>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="{{ url_for('h2r_model')}}">Ninja H2R 1000</a>
+							<a class="dropdown-item" href="{{ url_for('show_more', review_id=review._id)}}">Filter this model</a>
 							<a class="dropdown-item" href="{{ url_for('vulcan_model')}}">Vulcan 650</a>
 							<a class="dropdown-item" href="{{ url_for('zxr_model')}}">Ninja 600</a>
 						</div>

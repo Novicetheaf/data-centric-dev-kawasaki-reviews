@@ -17,6 +17,6 @@
 
 @media only screen and (min-width: 600px) {
     .card.py-0{
-        max-height: 550px;
+        max-height: 750px;
     }
 }
