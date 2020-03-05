@@ -2,7 +2,7 @@
 
 
 <article class="reviews-body">
- <h3 class="reviews-headhing">CRITIC REVIEW</h3>
+ <h3 class="reviews-headhing">CRITIC REVIEWS</h3>
 	<div class="container">
 		<div class="row">
 {% for review in siteReview %}
@@ -22,7 +22,7 @@
 
 						<p class="card-text">Want to view more details?</p>
 						<a href="{{ url_for('show_more', review_id=review._id)}}">
-                            <button type="button" class="btn btn-secondary button-position">See more.</button>
+                            <button type="button" class="btn btn-secondary button-position">See more</button>
 						</a>
 					</div>
 				</div>
