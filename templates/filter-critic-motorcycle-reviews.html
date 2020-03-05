@@ -1,25 +1,51 @@
 {% extends 'base.html' %} {% block content %}
 
 {% for review in siteReview %}
-<div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12 px-0 mt-2">
-<div class="card mt-5 p-0" >
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="{{review.image}}" class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Model: {{review.model}}</h5>
-        <p>Overall Rating: {{review.overallRating}}</p>
-		<p>Engine Size: {{review.engineSize}}</p>
-		<p>Power: {{review.power}}</p>
-		<p>Price: {{review.price}}</p>
-		<p>Insurance Group: {{review.insuranceGroup}}</p>
-		<p>Seat Height: {{review.seatHeight}}</p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 px-0 mt-2">
+
+			<div class="card mt-5 p-0">
+				<div class="row no-gutters">
+					    <div class="col-md-4">
+						<img src="{{review.image}}" class="card-img" alt="review.model">
+                        <div class="p-3">
+                            <h5 class="card-title">Model: {{review.model}}</h5>
+                            <p>Overall Rating: {{review.overallRating}}</p>
+                            <p>Engine Size: {{review.engineSize}}</p>
+                            <p>Power: {{review.power}}</p>
+                            <p>Price: {{review.price}}</p>
+                            <p>Insurance Group: {{review.insuranceGroup}}</p>
+                            <p>Seat Height: {{review.seatHeight}}</p>
+                        </div>
+                </div>
+						<div class="col-md-8">
+							<div class="card-body">
+                                <h3>Overall Description:</h3>
+								<p>{{review.overallDescription}}</p>
+
+                                <h3>Ride Quality & Brakes:</h3>
+                                <p>{{review.rideQualityAndBrakes}}</p>
+
+                                <h3>Engine:</h3>
+                                <p>{{review.Engine}}</p>
+
+                                <h3>Build Quality & Reliability:</h3>
+                                <p>{{review.BuildQualityAndReliability}}</p>
+
+                                <h3>Insurance Running Costs Value:</h3>
+                                <p>{{review.InsuranceRunningCostsValue}}</p>
+
+                                <h3>Equipment:</h3>
+                                <p>{{review.Equipment}}</p>
+							</div>
+						</div>
+                        
+					</div>
+				</div>
+			</div>
+			
+	</div>
 </div>
 
 {% endfor %}
