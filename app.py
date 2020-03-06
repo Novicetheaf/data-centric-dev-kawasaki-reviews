@@ -36,7 +36,7 @@ def user_reviews():
 
 @app.route('/show_more/<review_id>')
 def show_more(review_id):
-    return render_template('filter-critic-motorcycle-reviews.html',
+    return render_template('single-critic-motorcycle-review.html',
     siteReview=mongo.db.siteReview.find({'_id': ObjectId(review_id)}))
 
 
