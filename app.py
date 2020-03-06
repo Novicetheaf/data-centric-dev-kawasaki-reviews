@@ -40,8 +40,16 @@ def show_more(review_id):
     siteReview=mongo.db.siteReview.find({'_id': ObjectId(review_id)}))
 
 
+h2r_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2018-Kawasaki-Ninja-H2R1.jpg"
+vulcan_s_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2017-Kawasaki-Vulcan-S-ABS-Cafe-Review-5.jpg"
+versys_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2019-kawasaki-versys-1000-se-lt-corner.jpg"
+zx6r_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/20_ZX6R-krt-hero1-scaled.jpeg"
+klr_650_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/KawasakiKLR6502016_060-768x512.jpg"
+z900_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/g-000221-g_W2210131_11-kawasaki-z900-636982140121390902.jpg"
+
 
 # add review
+
 
 @app.route('/add_review')
 def add_review():
@@ -51,13 +59,6 @@ def add_review():
 @app.route('/insert_review', methods=['POST'])
 def insert_review():
     userReview = mongo.db.ownerReviews
-
-    h2r_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2018-Kawasaki-Ninja-H2R1.jpg"
-    vulcan_s_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2017-Kawasaki-Vulcan-S-ABS-Cafe-Review-5.jpg"
-    versys_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2019-kawasaki-versys-1000-se-lt-corner.jpg"
-    zx6r_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/20_ZX6R-krt-hero1-scaled.jpeg"
-    klr_650_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/KawasakiKLR6502016_060-768x512.jpg"
-    z900_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/g-000221-g_W2210131_11-kawasaki-z900-636982140121390902.jpg"
 
     model_select = request.form['model_select']
     overall_rating = request.form['overall_rating']
@@ -134,7 +135,26 @@ def update_review(review_id):
     running_costs_and_value = request.form['running_costs_and_value']
     review_summary = request.form['review_summary']
 
+    if model_select == "H2R":
+        image = h2r_image
+
+    elif model_select == "Vulcan S":
+        image = vulcan_s_image
+
+    elif model_select == "KLR 650":
+        image = klr_650_image
+
+    elif model_select == "Z900":
+        image = z900_image
+
+    elif model_select == "Versys 1000":
+        image = versys_image
+
+    elif model_select == "ZX-6R":
+        image = zx6r_image
+
     userReview.update({'_id': ObjectId(review_id)}, {
+        'image': image,
         'model_select': model_select,
         'overall_rating': overall_rating,
         'name': name,

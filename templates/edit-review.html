@@ -43,7 +43,7 @@
 
 					<div class="form-group">
 						<label for="name">Name</label>
-						<input type="text" name="name" class="form-control" id="name" placeholder="Name" value="{{review.name}}" required/>
+						<input type="text" name="name" class="form-control" id="name" placeholder="Name" value="{{review.name}}" maxlength="25" required/>
                         </div>
 
 						<label>Your review breakdown below</label>
@@ -105,7 +105,7 @@
 
 						<div class="form-group">
 							<label for="review_summary">Summary</label>
-							<textarea rows="5" name="review_summary" class="form-control" id="review_summary" placeholder="Your Summary" value="{{review.review_summary}}" required>{{review.review_summary}}</textarea>
+							<textarea rows="5" name="review_summary" class="form-control" id="review_summary" placeholder="Your Summary" value="{{review.review_summary}}" required minlength="25" maxlength="100">{{review.review_summary}}</textarea>
 						</div>
 						<button type="submit" class="btn btn-danger">Edit Review</button>
 				</form>
