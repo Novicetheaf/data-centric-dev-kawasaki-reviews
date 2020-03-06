@@ -5,7 +5,7 @@ from bson.objectid import ObjectId
 
 from os import path
 if path.exists("env.py"):
-  import env
+    import env
 
 app = Flask(__name__)
 
@@ -23,13 +23,14 @@ def index():
 
 @app.route('/critic_reviews_search')
 def critic_reviews_search():
-    return render_template('critic-reviews-search.html', siteReview=mongo.db.siteReview.find())
+    return render_template('critic-reviews-search.html',
+                           siteReview=mongo.db.siteReview.find())
 
 
 @app.route('/user_reviews')
 def user_reviews():
     return render_template("user-reviews.html",
-    userReview=mongo.db.ownerReviews.find())
+                           userReview=mongo.db.ownerReviews.find())
 
 
 # Sort motorcycles by model
@@ -37,7 +38,8 @@ def user_reviews():
 @app.route('/show_more/<review_id>')
 def show_more(review_id):
     return render_template('single-critic-motorcycle-review.html',
-    siteReview=mongo.db.siteReview.find({'_id': ObjectId(review_id)}))
+                           siteReview=mongo.db.siteReview.
+                           find({'_id': ObjectId(review_id)}))
 
 
 h2r_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2018-Kawasaki-Ninja-H2R1.jpg"
@@ -169,4 +171,5 @@ def update_review(review_id):
 
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)
+    app.run(host=os.environ.get('IP'), port=int(
+        os.environ.get('PORT')), debug=True)
