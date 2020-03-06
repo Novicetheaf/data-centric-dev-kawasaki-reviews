@@ -10,6 +10,7 @@
 					    <div class="col-md-4">
 						<img src="{{review.image}}" class="card-img" alt="review.model">
                         <div class="p-3">
+                            <a class="nav-link p-0 float-right" href="{{ url_for('critic_reviews_search')}}"><button type="button" class="btn btn-light">Back To Critic Reviews</button></a>
                             <h5 class="card-title">Model: {{review.model}}</h5>
                             <p>Overall Rating: {{review.overallRating}}</p>
                             <p>Engine Size: {{review.engineSize}}</p>

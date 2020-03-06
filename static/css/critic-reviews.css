@@ -14,6 +14,10 @@ img.d-block.w-100 {
 
 }
 
+.btn.btn-light {
+    background-color: 
+    #dbdbdb;
+}
 
 @media only screen and (min-width: 600px) {
 
