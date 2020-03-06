@@ -77,11 +77,36 @@ button.btn.btn-danger {
 /*--------------------------------------------Media Queries*/
 
 @media only screen and (min-width: 700px) {
+
     body {
+
         background: url(https://i.pinimg.com/originals/d5/e4/ab/d5e4ab2bf184775c091c0ae7747e4d53.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+
     }
+
+}
+
+@media only screen and (min-width: 750px) {
+
+    .card-body {
+        height: 420px;
+    } 
+
+    .critic-reviews {
+        margin: 10px;
+    }
+
+    .button-position {
+        position: relative;
+        bottom: -10px;
+    }
+
+    .text-scroll {
+        overflow: scroll;
+    }
+
 }
