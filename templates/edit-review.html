@@ -15,7 +15,7 @@
 						<div class="input-group-prepend">
 							<label class="input-group-text" for="model_select">Kawasaki Models</label>
 						</div>
-						<select class="custom-select" id="model_select" name="model_select">
+						<select class="custom-select" id="edit_model_select" name="model_select">
 						    <option selected value="{{review.model_select}}">{{review.model_select}}</option>
 						    <option value="H2R">H2R</option>
 						    <option value="Vulcan S">Vulcan S</option>
@@ -31,7 +31,7 @@
 						<div class="input-group-prepend">
 							<label class="input-group-text" for="overall_rating">Overall Rating</label>
 						</div>
-						<select class="custom-select" id="overall_rating" name="overall_rating">
+						<select class="custom-select" id="edit_overall_rating" name="overall_rating">
 						    <option selected value="{{review.overall_rating}}">{{review.overall_rating}}</option>
 						    <option value="★">★</option>
 						    <option value="★★">★★</option>
@@ -43,7 +43,7 @@
 
 					<div class="form-group">
 						<label for="name">Name</label>
-						<input type="text" name="name" class="form-control" id="name" placeholder="Name" value="{{review.name}}" maxlength="25" required/>
+						<input type="text" name="name" class="form-control" id="edit_name" placeholder="Name" value="{{review.name}}" maxlength="25" required/>
                         </div>
 
 						<label>Your review breakdown below</label>
@@ -51,7 +51,7 @@
 							<div class="input-group-prepend">
 								<label class="input-group-text" for="ride_quality_and_brakes">Ride Quality & Brakes</label>
 							</div>
-							<select class="custom-select" id="ride_quality_and_brakes" name="ride_quality_and_brakes">
+							<select class="custom-select" id="edit_ride_quality_and_brakes" name="ride_quality_and_brakes">
 						    <option selected value="{{review.ride_quality_and_brakes}}">{{review.ride_quality_and_brakes}}</option>
 						    <option value="★">★</option>
 						    <option value="★★">★★</option>
@@ -65,7 +65,7 @@
 							<div class="input-group-prepend">
 								<label class="input-group-text" for="engine">Engine</label>
 							</div>
-							<select class="custom-select" id="engine" name="engine">
+							<select class="custom-select" id="edit_engine" name="engine">
 						    <option selected value="{{review.engine}}">{{review.engine}}</option>
 						    <option value="★">★</option>
 						    <option value="★★">★★</option>
@@ -79,7 +79,7 @@
 							<div class="input-group-prepend">
 								<label class="input-group-text" for="build_quality_and_reliability">Build Quality & Reliability</label>
 							</div>
-							<select class="custom-select" id="build_quality_and_reliability" name="build_quality_and_reliability">
+							<select class="custom-select" id="edit_build_quality_and_reliability" name="build_quality_and_reliability">
 						    <option selected value="{{review.build_quality_and_reliability}}">{{review.build_quality_and_reliability}}</option>
 						    <option value="★">★</option>
 						    <option value="★★">★★</option>
@@ -93,7 +93,7 @@
 							<div class="input-group-prepend">
 								<label class="input-group-text" for="running_costs_and_value">Running Costs & Value</label>
 							</div>
-							<select class="custom-select" id="running_costs_and_value" name="running_costs_and_value">
+							<select class="custom-select" id="edit_running_costs_and_value" name="running_costs_and_value">
 						    <option selected value="{{review.running_costs_and_value}}">{{review.running_costs_and_value}}</option>
 						    <option value="★">★</option>
 						    <option value="★★">★★</option>
@@ -105,7 +105,7 @@
 
 						<div class="form-group">
 							<label for="review_summary">Summary</label>
-							<textarea rows="5" name="review_summary" class="form-control" id="review_summary" placeholder="Your Summary" value="{{review.review_summary}}" required minlength="25" maxlength="100">{{review.review_summary}}</textarea>
+							<textarea rows="5" name="review_summary" class="form-control" id="edit_review_summary" placeholder="Your Summary" value="{{review.review_summary}}" required minlength="25" maxlength="100">{{review.review_summary}}</textarea>
 						</div>
 						<button type="submit" class="btn btn-danger">Edit Review</button>
 				</form>

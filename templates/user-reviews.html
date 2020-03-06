@@ -21,13 +21,8 @@
                         <p>Running costs and value: {{reviews.running_costs_and_value}}</p>
                         <p>Review summary: {{reviews.review_summary}}</p>
 
-                        <a href="{{url_for('edit_review', review_id=reviews._id)}}">
-                        <button id="edit-review" type="button" class="btn btn-light">Edit
-                        </button></a>
-                        <a href="{{url_for('remove_review', review_id=reviews._id)}}">
-                        <button id="delete-review" type="button" class="btn btn-light">Delete
-                        </button></a>
-
+                        <a class="btn btn-light edit-review" href="{{url_for('edit_review', review_id=reviews._id)}}">Edit</a>
+                        <a class="btn btn-light delete-review" href="{{url_for('remove_review', review_id=reviews._id)}}">Delete</a>
 					</div>
 				</div>
 			</div>

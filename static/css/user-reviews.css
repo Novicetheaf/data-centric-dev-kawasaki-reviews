@@ -6,11 +6,11 @@
     margin: 10px;
 }
 
-#delete-review{
+.btn-light.delete-review{
     background: rgba(224, 87, 8, 0.82);
 }
 
-#edit-review{
+.btn-light.edit-review{
     background: #282929;
     color: rgb(255, 255, 255);
 }

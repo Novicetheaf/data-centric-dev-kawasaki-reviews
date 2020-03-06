@@ -15,32 +15,7 @@ app.config["MONGO_URI"] = os.environ.get('motorcycleURI')
 
 mongo = PyMongo(app)
 
-
-@app.route('/')
-def index():
-    return render_template("index.html")
-
-
-@app.route('/critic_reviews_search')
-def critic_reviews_search():
-    return render_template('critic-reviews-search.html',
-                           siteReview=mongo.db.siteReview.find())
-
-
-@app.route('/user_reviews')
-def user_reviews():
-    return render_template("user-reviews.html",
-                           userReview=mongo.db.ownerReviews.find())
-
-
-# Sort motorcycles by model
-
-@app.route('/show_more/<review_id>')
-def show_more(review_id):
-    return render_template('single-critic-motorcycle-review.html',
-                           siteReview=mongo.db.siteReview.
-                           find({'_id': ObjectId(review_id)}))
-
+# links to images for user reviews and critic reviews
 
 h2r_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2018-Kawasaki-Ninja-H2R1.jpg"
 vulcan_s_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/2017-Kawasaki-Vulcan-S-ABS-Cafe-Review-5.jpg"
@@ -49,9 +24,37 @@ zx6r_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kaw
 klr_650_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/KawasakiKLR6502016_060-768x512.jpg"
 z900_image = "https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/g-000221-g_W2210131_11-kawasaki-z900-636982140121390902.jpg"
 
+# go to index page
+
+@app.route('/')
+def index():
+    return render_template("index.html")
+
+# go to critic reviews page
+
+@app.route('/critic_reviews_search')
+def critic_reviews_search():
+    return render_template('critic-reviews-search.html',
+                           siteReview=mongo.db.siteReview.find())
+
+# go to user reviews page
+
+@app.route('/user_reviews')
+def user_reviews():
+    return render_template("user-reviews.html",
+                           userReview=mongo.db.ownerReviews.find())
+
+
+# get more details on a particular motorcycle and filter by its id
+
+@app.route('/show_more/<review_id>')
+def show_more(review_id):
+    return render_template('single-critic-motorcycle-review.html',
+                           siteReview=mongo.db.siteReview.
+                           find({'_id': ObjectId(review_id)}))
+
 
 # add review
-
 
 @app.route('/add_review')
 def add_review():
@@ -106,7 +109,7 @@ def insert_review():
     return redirect(url_for('user_reviews'))
 
 
-# delete user review
+# Delete user review
 
 @app.route('/remove_review/<review_id>')
 def remove_review(review_id):
