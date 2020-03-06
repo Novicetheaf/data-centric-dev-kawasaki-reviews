@@ -11,9 +11,9 @@ The web app also contains forms of contacting me in my footer, via conact me mod
  
 ## Demo
 
-A live demo can be viewed [here](https://novicetheaf.github.io/interactive-frontend-development-project/ )
+A live demo can be viewed [here](https://data-centric-dev-bike-reviews.herokuapp.com/ )
 
-![Desktop Demo](https://raw.githubusercontent.com/Novicetheaf/interactive-frontend-development-project/master/assets/images/preview-image.PNG "Desktop Demo")
+![Desktop Demo](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/static/images/kawasaki-reviews-preview-image.PNG "Desktop Demo")
 
 ## User Experience
 
