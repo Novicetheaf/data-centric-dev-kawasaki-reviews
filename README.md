@@ -162,7 +162,7 @@ no issues found, bar in mobile view the text output was too large to fit in one 
 
 [Python Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/python-code-validation.PNG)
 
-[CSS Validation]()
+[CSS Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/css-validation.PNG)
 
 ### User stories
 For my user stories testing, I had to put myself in the shoes of the user, anyone looking for a quick way to calculate income or fuel consumption and employers/recruiters. The user will know straight away that this site is a toolkit, it solves and simplifies. 
