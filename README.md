@@ -111,7 +111,7 @@ The colour scheme I was going for was to go with the background motorcycle image
 
 If I had more time I would like to add a requirement for an access key to edit or delete user reviews, this will be updated in the future, but for this initial release this feature won't be available, as it would result in a fragmented project.
  
-I would also like to add the option to filter the users review and also have pagination for user reviews, just in case the site receives more traffic in the future.
+I would also like to add the option to filter the users reviews and also have pagination for user reviews, just in case the site receives more traffic in the future, for the moment though this site doesn't have any need for pagination.
 
 ## Testing 
 Testing ID: test-data-centric-project-eoc
