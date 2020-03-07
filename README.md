@@ -220,9 +220,6 @@ Note on testing:
 - This did actully find one small issue where if the user adds numbers and letters, with numbers first and letters following, the result is 'NaN'.
 Fixed this issue was resolved by changing the javascript to check the length of charactors for input fields. 
 
-### Unit Testing: 
-
-For this project I didn't do any true unit testing, though I did test each block of code prior to commiting each part, within the short time constraints doing true unit testing would slow the project down considerably, and would have resulted in an incomplete project.
 
 ## Deployment
 
@@ -301,7 +298,7 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
 
 ## MongoDb Schema
 
-- The critic's MongoDB collection `critic reviews` takes the following schema.
+### The critic's MongoDB collection `critic reviews` takes the following schema.
 
 {
     "_id": {
@@ -337,7 +334,7 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
     "Equipment": ""
 }
 
-- The user's MongoDB collection `user reviews` takes the following schema.
+### The user's MongoDB collection `user reviews` takes the following schema.
 
 {
     "_id": {
@@ -369,6 +366,8 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
 I used [Ljndawson's site](http://ljndawson.org/2560x1440-white-wallpaper-hd.html) for my background image.
 
 ### Acknowledgements
+
+I used [MCN's site](https://www.motorcyclenews.com/) for my critic reviews content description section, and for general information about each motorcycle that was used in this project.
 
 Modal Contact Form outer sections Reference can be found [here](https://mdbootstrap.com/docs/jquery/modals/forms/)
 
