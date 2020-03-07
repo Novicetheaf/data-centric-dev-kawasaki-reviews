@@ -363,7 +363,7 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
 ## Credits
 
 ### Media
-I used [Pinterest](https://www.pinterest.com/) for my background image.
+I used [Pinterest](https://www.pinterest.com/) for my background image, and other motorcycle images.
 
 ### Acknowledgements
 
