@@ -173,6 +173,15 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 ### Responsive Flow Testing:
 
+
+| Element Tested | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| Desktop(s) | On Desktop screens the jumbotron streches out 75% of the screen, the background image is centered | as expected |
+| Laptop(s) | On laptop devices it remains the same bar the footer which you now need to scroll down to access | as expected |
+| Tablet(s) | On tablet devices the background image is still centered, but the end are cut from view and you need to scoll down to view the footer in landscape view | as expected |
+| Mobile(s) | On mobile the jumbotron takes up 75% of the width, and the background image is positioned to the center right of the screen, you can't see the footer until you scroll down | as expected |
+
+
 #### **Expected outcome for Desktop(s):**  
 On desktop devices the background image appears and covers all background space correctly. The navigation section takes up the full with of the screen, and also becomes semi transparent in order to show the background. The main content section remains fixed to 768px, the footer section remains within these confinements also.
 
