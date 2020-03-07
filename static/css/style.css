@@ -1,13 +1,16 @@
 body {
+
         background: url(https://i.pinimg.com/originals/d5/e4/ab/d5e4ab2bf184775c091c0ae7747e4d53.jpg) no-repeat center left fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         font-family: 'Oswald', sans-serif;
+
 }
 
 .custom-jumbotron {
+
     margin-top: 260px;
     background-color: #fdfdfdc9;
     width: 75%;
@@ -15,18 +18,22 @@ body {
     margin-right: auto;
     text-align: center;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.388);
+
 }
 /*--------------------------------------------Reviews*/
 
 .reviews-headhing {
+
     text-align: center;
     text-shadow: 2px 3px rgba(0, 0, 0, 0.199);
     font-size: 3em;
     padding-bottom: 20px;
     font-family: 'Oswald', sans-serif;
+
 }
 
 .reviews-body {
+    
     background: rgba(196, 196, 196, 0.95);
     padding-top: 40px;
     padding-bottom: 100px;

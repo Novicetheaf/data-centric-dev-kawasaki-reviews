@@ -144,7 +144,6 @@ no issues found, bar in mobile view the text output was too large to fit in one 
 - This issue has been resolved, I added a support for Edge browsers to use hex colors codes, which rectified the issue.
 
 ### Code validation Testing:
-[CSS Validation](https://github.com/novicetheaf/interactive-frontend-development-project/blob/master/assets/code-validation/css-validation.PNG)
 
 [Index HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/index-page-validation.PNG)
 
