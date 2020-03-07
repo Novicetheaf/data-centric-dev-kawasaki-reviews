@@ -48,14 +48,18 @@ For the user reviews you are brought to all of the available reviews regardless 
 For adding the review the user can only access this by the navbar which means it is allways accessible, I achieved this by means of a popup modal to add a review.
 
 ### Skeleton
-To do still!!!!!!!!!!!!!!!!!!!!!!
-[Mobile Design wireframe - Income Tax Calculator](https://github.com/Novicetheaf/interactive-frontend-development-project/blob/master/wireframes/income-tax-calc-wireframe-mobile.pdf)
 
-[Mobile Design wireframe - Miles Per Gallon Calculator](https://github.com/Novicetheaf/interactive-frontend-development-project/blob/master/wireframes/mpg-calc-wireframe-mobile.pdf)
+[Mobile Design wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/mobile-wireframe.jpg)
 
-[Desktop Design wireframe](https://github.com/Novicetheaf/interactive-frontend-development-project/blob/master/wireframes/desktop-wireframe-design.pdf)
+[Desktop Design wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/desktop-wireframe.jpg)
 
-[Modal Design wireframe](https://github.com/Novicetheaf/interactive-frontend-development-project/blob/master/wireframes/modal-wireframe.pdf)
+[Critic reviews wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/critic-reviews.jpg)
+
+[User reviews wireframe](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/wireframes/user-reviews.jpg)
+
+[Add review and edit wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/add-reviews-and-edit-wireframe.jpg)
+
+[Contact me modal wireframe](https://raw.githubusercontent.com/Novicetheaf/data-centric-dev-kawasaki-reviews/master/wireframes/contact-me-modal-wireframe.jpg)
 
 ### Surface
 
