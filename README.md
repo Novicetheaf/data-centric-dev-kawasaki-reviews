@@ -191,7 +191,7 @@ With regards to the above mentioned user stories & the usability of the web app,
 | Tablet(s) | The cards for each review are in rows of 2 | as expected |
 | Mobile(s) | The cards for each review are in rows of 1 | as expected |
 
-**Note:** For user reviews the page behaves the same bar when in mobile view.
+**Note:** For user reviews the page behaves the same bar when in mobile view, where there is a small margin around the cards, which is as expected.
 
 #### See more critic review Page
 
