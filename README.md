@@ -95,26 +95,26 @@ The colour scheme I was going for was to go with the background motorcycle image
  
 ### Existing Features
 
-- The core features of my site is to make life easier for the end-user, by solving calculations for them and giving them specifically simplified results, that make it quick and easy to use. 
+- The core features of my site is to provide information about certain models of kawasaki motorcycles for the user to figure out which bike best suites their needs. The user can add their own review and edit reviews, currently there is no access key required to edit or delete a review, this will be updated in the future, but for this initial release this feature won't be available.
 
-- For my navigation bar I added a dropdown button with a jquery toggle arrow. This slides down content and give te user more options only if they want them, it keeps the flow simple, and evoking positive emotional response with clean consistancy in flow and design.
+- For my navigation bar I added some jquery to change the colour upon scrolling down through the site. This evokes a positive response from the user and makes it easier to see the navigation elements within the navbar. It is not need before scrolling due to the background colours of the top section of the background image. I also made the navbar fixed to allow constant accessiblity for the user.
 
-- My web apps I used an accordion bootstrap setup, and implemented jquery to fixed on application to be open at once, so that the user doesn't have to scroll down very far to navigate the site.
+- For the footer section I have a contact me logo which bring up a contact me modal form, it also includes social external links to my github and linkedin.
 
-- For the income tax calculator section I used used simple input and dropdown options along with a calculate tax button, when clicked would perform the calculations to output taxed amount for the year, net pay for the year, and a weekly pay output.
+- Within the critics section you can view all particular kawasaki models and you can choose the option `see more` to filter that particular model and show more detiled information from the database.
 
-- The other web app miles per gallon calculator also keeps with the same format of styling. It uses two input box's miles/kilometers and your fuel used in litres. 
-It also has a required dropdown option as to wether your distance is in miles or kilometers, this then changes the output text below accordingly.
-It also features radio buttons to change the gallon rate to US(3.75L) or UK(4.25L). It also follows the same styled calculate button which takes your inputs and calculates them below in MPG(miles per gallon).
+- For the user reviews you can view all current models within the database and edit or delete any current models. 
+
+- In the navigation bar you can choose the `add review` option and this will bring up a modal and let you add a new review based on the schema of models.
 
 ### Features Left to Implement
 
-If I had more time I would like to use Chart.js to create a pie chart based on the output values to give a nice visual comparison of the what you pay on tax's vs what you received for the year etc.
-
-I still have two applications left to add to this toolkit, the first one would be a stopwatch. The second application would be a calorie counter.  
+If I had more time I would like to add a requirement for an access key to edit or delete user reviews, this will be updated in the future, but for this initial release this feature won't be available, as it would result in a fragmented project.
+ 
+I would also like to add the option to filter the users review and also have pagination for user reviews, just in case the site receives more traffic in the future.
 
 ## Testing 
-Testing ID: test-interactive-frontend-project-eoc
+Testing ID: test-data-centric-project-eoc
 ### Tested by: 
 Edmund O Callaghan
 
