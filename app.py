@@ -26,8 +26,7 @@ vulcan_s_image = image_path + "2017-Kawasaki-Vulcan-S-ABS-Cafe-Review-5.jpg"
 versys_image = image_path + "2019-kawasaki-versys-1000-se-lt-corner.jpg"
 zx6r_image = image_path + "20_ZX6R-krt-hero1-scaled.jpeg"
 klr_650_image = image_path + "KawasakiKLR6502016_060-768x512.jpg"
-z900_image = image_path
-+ "g-000221-g_W2210131_11-kawasaki-z900-636982140121390902.jpg"
+z900_image = image_path + "Z900.jpg"
 
 
 # go to index page
