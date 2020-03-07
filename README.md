@@ -173,42 +173,12 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 ### Responsive Flow Testing:
 
-
 | Element Tested | Expected outcome | Outcome |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Desktop(s) | On Desktop screens the jumbotron streches out 75% of the screen, the background image is centered | as expected |
 | Laptop(s) | On laptop devices it remains the same bar the footer which you now need to scroll down to access | as expected |
 | Tablet(s) | On tablet devices the background image is still centered, but the end are cut from view and you need to scoll down to view the footer in landscape view | as expected |
 | Mobile(s) | On mobile the jumbotron takes up 75% of the width, and the background image is positioned to the center right of the screen, you can't see the footer until you scroll down | as expected |
-
-
-#### **Expected outcome for Desktop(s):**  
-On desktop devices the background image appears and covers all background space correctly. The navigation section takes up the full with of the screen, and also becomes semi transparent in order to show the background. The main content section remains fixed to 768px, the footer section remains within these confinements also.
-
-- Site Remains responsive throughout all devices that were tested.
-#### Actual outcome:
-- On desktop screens the site responds the same as above.
-
-#### **Expected outcome for Laptop(s):** 
-Elements behave the same as on desktop, other then the background image that become more streched, yet not losing any pixel quailty of the image.
-- The Site Remains responsive throughout all devices that were tested. 
-#### Actual outcome:
-On Laptop screens the site responds the same as above.
-
-#### **Expected outcome for Tablet(s):**  
-Elements behave the same as on latop and desktop, bar the background image cannot be seen from 768px down, other then behind the navigation section as it remains transparent for this resolution also.
-
-- Site Remains responsive throughout all devices that were tested.
-
-#### Actual outcome:
-On Tablet screens the site responds the same as above.
-
-#### **Expected outcome for Mobile(s):**  
-the background image is no longer visible as the media query that set it in motion only comes into effect at a min 600px. The linkedin and github social icons in the navigation bar get push to the left of the section. The content adjusts accordingly with the screen size of the mobile devices tested, bar the not made above in regards to the output text for the income tax calculator, which was rectified. Please see resolution section of testing for more information.
-
-Other then the above issue the site remains responsive throughout all devices that were tested. 
-#### Actual outcome:
-On Mobile screens the site responds the same as above.
 
 
 ## Deployment
@@ -217,7 +187,7 @@ The project is hosted using heroku as github pages doesn't support mongodb.
 
 In order to deploy your site to heroku you will need to follow these steps:
 
-- If you don't have a heroku account already then please follow this link to        sign up. [Heroku sign up](https://signup.heroku.com/login)
+- If you don't have a heroku account already then please follow this link to sign up. [Heroku sign up](https://signup.heroku.com/login)
 
 - After this step [Heroku sign in](https://id.heroku.com/login)
 
