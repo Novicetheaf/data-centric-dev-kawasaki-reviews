@@ -131,16 +131,14 @@ Edmund O Callaghan
 ### Tested Resolutions: 
 320px x 640px to 4K resolution: 
 
-Note: On 4k screens the home footer doesn't reach the bottom of the screen, which leaves the background image visible. 
+Note: On 4k screens the site does not support the view height of the screen.  
 
 ### Tested Browsers:
 - FireFox,
 - Google Chrome, 
 - Edge. 
 
-- Note: on edge browser getting footer links blue, as oppsed to red, and contact me is black as opposed to red.
-- This issue has been resolved, I added a support for Edge browsers to use hex colors codes, which rectified the issue.
-
+- Note: on edge browser the colour of the contact me modal and the add review modal are not supported by edge.
 ### Code validation Testing:
 
 [Index HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/index-page-validation.PNG)
@@ -162,16 +160,15 @@ Note: On 4k screens the home footer doesn't reach the bottom of the screen, whic
 [CSS Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/css-validation.PNG)
 
 ### User stories
-For my user stories testing, I had to put myself in the shoes of the user, anyone looking for a quick way to calculate income or fuel consumption and employers/recruiters. The user will know straight away that this site is a toolkit, it solves and simplifies. 
+For my user stories testing, I had to put myself in the shoes of the user, anyone looking for a quick way to get information about potential kawasaki modals. They would want to see expierenced riders opinons on the matter and detailed descriptions. They would also be looking for more personal and like minded reviews, to get an idea what the everyday rider thinks of these bikes.
 
-The everday user will want to gain access to either of the two applications quickly and will be looking for a concise response in regards to their input(s). They want to be given clean and clear directions as to where they should navigate to in order to achieve their intentions, whether that be sending an email, or using the application themselves.
+The everday user will want to gain access to the applications quickly and will be looking for quick input(s), that give back what they are looking for, like user reviews brings you straight to the reviews at hand, and critic reviews does the same, and the see more option is easy to interpret, which brings you to a detailed review of each particular motorcycle.
 
-As a recruiter or employer I want to find out with quick succession, whether this candidate has the required skills as an interactive frontend designer/developer for the job spec. When you arrive at the site you are greeted with a professional, concise and impactful website, this showcases good design and clear intentions as to what it is. 
+They want to be given clean and clear directions as to where they should navigate to in order to achieve their intentions, whether that be sending an email, or adding a review themselves.
+
+As a recruiter or employer I want to find out with quick succession, whether this candidate has the required skills as a database designer/developer for the job spec. When you arrive at the site you are greeted with a professional, concise and impactful website, this showcases good design and clear intentions as to what it is. 
 
 With regards to the above mentioned user stories & the usability of the web app, the outcome for this test was successful, It met all expectations of ease of use. 
-
-Note: For the accordion this uses bootstrap by standard as part of the template, however, with this in mind you have the option to close both applications down, and for design reasons, and lack of content, my idea was to keep one card section open at all time, so for this I had to write custom jquery to keep one application open.
-Ontop of this I also added in jquery to keep only one section open at once, so that the user does not have to scroll down if they open two at the same time it will close the other one.
 
 
 ### Responsive Flow Testing:
