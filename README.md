@@ -33,7 +33,7 @@ In this project my goal was to create consistancy in design flow, and colour sch
 The main goal in this project was to showcase my ability to use CRUD functionality, (create, read, update and delete)
 
 ### Scope
-The scope of the project was to provide an application that the end-user could use in there day to day use and would respond primarily on a mobile device, and showcase my javascript and jquery skills to date along with html and css.
+The scope of the project was to provide an application that the end-user could use in there day to day use and would respond primarily on a mobile device, and showcase my design, python, flask and mongodb skills to date along with html and css.
 
 ### Structure
 The key aspects of the nvabar was to have the ability to dropdown the navbar and create an positive emotional response to the user, and give them links to my linkedin and github. It also allows them to fill out a contact me form and using Emailjs to send it to my email address. 
