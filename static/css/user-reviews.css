@@ -1,16 +1,16 @@
-.user-reviews{
+.user-reviews {
     margin-top: 300px;
 }
 
-.user-cards{
+.user-cards {
     margin: 10px;
 }
 
-.btn-light.delete-review{
+.btn-light.delete-review {
     background: rgba(224, 87, 8, 0.82);
 }
 
-.btn-light.edit-review{
+.btn-light.edit-review {
     background: #282929;
     color: rgb(255, 255, 255);
 }
