@@ -131,9 +131,7 @@ Edmund O Callaghan
 ### Tested Resolutions: 
 320px x 640px to 4K resolution: 
 
-- Note Axon 7 mini:
-
-no issues found, bar in mobile view the text output was too large to fit in one line, depending on the output size for income tax calculator, this issue was resolved by changing the set text size lower on that particular output section, and setting it to go back to normal when the screen size get to a min of 400px, this was achieved using media queries to respond to larger screens, thus remaining mobile first.
+Note: On 4k screens the home footer doesn't reach the bottom of the screen, which leaves the background image visible. 
 
 ### Tested Browsers:
 - FireFox,
