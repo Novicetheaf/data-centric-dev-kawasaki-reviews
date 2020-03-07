@@ -173,13 +173,34 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 ### Responsive Flow Testing:
 
+#### Home Page
+
 | Element Tested | Expected outcome | Outcome |
 | --- | --- | --- |
 | Desktop(s) | On Desktop screens the jumbotron stretches out 75% of the screen, the background image is centered | as expected |
 | Laptop(s) | On laptop devices it remains the same bar the footer which you now need to scroll down to access | as expected |
-| Tablet(s) | On tablet devices the background image is still centered, but the end are cut from view and you need to scoll down to view the footer in landscape view | as expected |
+| Tablet(s) | On tablet devices the background image is still centered, but the ends of the motorcycle are cut from view and you need to scoll down to view the footer in landscape view | as expected |
 | Mobile(s) | On mobile the jumbotron takes up 75% of the width, and the background image is positioned to the center right of the screen, you can't see the footer until you scroll down | as expected |
 
+#### Critics Page
+
+| Element Tested | Expected outcome | Outcome |
+| --- | --- | --- |
+| Desktop(s) | The cards for each review are in rows of 3 | as expected |
+| Laptop(s) | The same as desktop | as expected |
+| Tablet(s) | The cards for each review are in rows of 2 | as expected |
+| Mobile(s) | The cards for each review are in rows of 1 | as expected |
+
+**Note:** For user reviews the page behaves the same bar when in mobile view.
+
+#### See more critic review Page
+
+| Element Tested | Expected outcome | Outcome |
+| --- | --- | --- |
+| Desktop(s) | The card takes up 75% of the screen width and has a scroll option for the detailed description | as expected |
+| Laptop(s) | The same as desktop | as expected |
+| Tablet(s) | The layout changes where the image stacks on top of the preview description and the overall description stack under the preview description while maintaining the scroll option  | as expected |
+| Mobile(s) | The layout remains the same as the tablet bar the content width, which is now 100% of the screen's width. There is no longer a scroll option for the detailed description | as expected |
 
 ## Deployment
 
