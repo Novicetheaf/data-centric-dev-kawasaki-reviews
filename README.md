@@ -18,11 +18,11 @@ A live demo can be viewed [here](https://data-centric-dev-bike-reviews.herokuapp
 ## User Experience
 
 ### User stories
-As an end-user I want to access the tools on this web app with ease, I want quick calculations and simple data that doesn't over complicate the situation, as in what was the tax you paid for the year, and what was the mpg I achieved.
+As an end-user I want to access the information on this web site with ease, I want to add a review with ease and quick succession. I want to edit my review or any review I feel needs to be updated.
 
-Any employers who visit my site will wannt to see my level of design and consistancy, along with the ability to write functioning code for interactivity and calculations and passing values from one method to another.
+Any employers who visit my site will wannt to see my level of design and consistancy, along with the ability to write functioning code with python3 and mongodb.
 
-Any recruiters who visit my web app will want to see if my projects meet the requirments of any position they are recruiting for.
+Any recruiters who visits my web site will want to see if my site meets the requirments of the position they are recruiting for.
 
 ### Strategy
 In this project my main goal was to create a consistancy in design flow, and colour schemes. The web app is designed mobile first, in regards to content layout and css media queries, as most users use a mobile phone these days, but the site does respond nicely to desktop and laptop screens.
