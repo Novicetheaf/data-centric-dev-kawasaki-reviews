@@ -215,13 +215,76 @@ For this project I didn't do any true unit testing, though I did test each block
 
 ## Deployment
 
-The web app is hosted using Github pages, this can be found if you go to github, click settings in the repo and scroll down until you come to the heading github pages.
-The sub heading 'source section' will say 'none' on the dropdown button. You want to change this by clicking on it and choose 'master branch'. 
-Now it should be deployed through the main branch and the live site will update upon new commits that are pushed to Github.
-The landing page is named index.html which is standard for any home page of a website. 
+The project is hosted using heroku as github pages doesn't support mongodb.
 
-In order to run the site locally, you can use the clone this site by using the following link in your terminal: 'git clone '
-To remove any connections with Github repository use the  following in your terminal: `git remote rm origin`
+In order to deploy your site to heroku you will need to follow these steps:
+
+- If you don't have a heroku account already then please follow this link to        sign up. [Heroku sign up](https://signup.heroku.com/login)
+
+- After this step [Heroku sign in](https://id.heroku.com/login)
+
+- Now go to your [Heroku dashboard](https://dashboard.heroku.com)
+
+- From this point you should see an option to the right of the screen called        'New' just under your navigation bar. if you can't find it try this link        [Create new app](https://dashboard.heroku.com/new-app)
+
+- From this point you want to choose a unique name as it won't allow you to         choose one already taken.
+
+- You'll need to set the region for where the servers will be based, so that is up to you, it can be US or EU, if most users willl be from EU, then you should choose EU.
+
+- Click Create app, then you will be brought to the deploy tab.
+
+- Scroll down and you will see 'Deployment method' on your left, from there choose 'Heroku Git'. This has all the commands you'll need to login to heroku via your IDE and deploy/push to heroku.
+
+- In your IDE cli you will need to first login, using command line interface.
+    Please type the following into you cli: $ heroku login
+
+- You will be asked to press any key from the cli, from this point you will want to do so, and then open the external or internal browsers which will log into heroku using the browser and then verify if it was successful.
+
+- Assuming it has been successful, you will want to push/deploy to heroku.
+
+- Before deployment you will need to make sure your procfile, requirements.txt have been created and are up to date in your IDE, if not then please add both to your IDE and then follow the next steps.
+
+        Procfile contents: 'web: python app.py'
+
+        requirements.txt file contents:
+
+            Click==7.0
+
+            dnspython==1.16.0
+
+            Flask==1.1.1
+
+            Flask-PyMongo==2.3.0
+
+            itsdangerous==1.1.0
+
+            pymongo==3.10.1
+
+            Werkzeug==1.0.0
+
+
+- In order to deploy the site to heroku use the following commands in you cli on your IDE:
+
+    $ git add .
+
+    $ git commit -m "final deployment"
+
+    $ git push heroku master
+
+- After deployment, you still need to setup **config variables**, please follow the instructions below to do so:
+
+    - Go to the '**Heroku Dashboard**' and look for **Settings**.
+    - Then click the option to **Reveal Config Vars**.
+    - Enter in the variable names and their values
+        - Name: **YourSitesURIName** value: DATABASE URL HERE
+        - Name: **IP**  value: 0.0.0.0
+        - Name: **Port** value: 5000
+
+
+In order to run the site locally, you can use the clone this site by using the following link in your terminal: `git clone https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews.git` To remove any connections with Github repository use the following in your terminal: `git remote rm origin`.  
+
+If you need anymore help in cloning this repo, then go to GitHub Help [page](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
 
 ## Credits
 
