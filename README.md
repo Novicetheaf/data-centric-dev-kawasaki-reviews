@@ -25,9 +25,12 @@ Any employers who visit my site will wannt to see my level of design and consist
 Any recruiters who visits my web site will want to see if my site meets the requirments of the position they are recruiting for.
 
 ### Strategy
-In this project my main goal was to create a consistancy in design flow, and colour schemes. The web app is designed mobile first, in regards to content layout and css media queries, as most users use a mobile phone these days, but the site does respond nicely to desktop and laptop screens.
 
-The main goal in this project was the applications themselves and they're to showcase my skills with javascript, jquery, css, bootstrap, and html.
+For this project I wanted a motorcycle review site specifically for kawasaki motorcycles. My aim was to evoke a positive emotional response from the user when they visited my site, and provide them with information regarding certain models of kawasaki motorcycles, they coud read reviews from critics, or users, they could edit a user review, delete and add their very own review or a particular model from the set models in the schemea.
+
+In this project my goal was to create consistancy in design flow, and colour schemes, as well as showing CRUD functionality. The web site is designed mobile first, in regards to content layout and css media queries, but the site does respond well on desktop, laptop and tablet screens.
+
+The main goal in this project was to showcase my ability to use CRUD functionality, (create, read, update and delete)
 
 ### Scope
 The scope of the project was to provide an application that the end-user could use in there day to day use and would respond primarily on a mobile device, and showcase my javascript and jquery skills to date along with html and css.
