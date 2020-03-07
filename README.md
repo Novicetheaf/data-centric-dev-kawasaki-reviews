@@ -33,7 +33,7 @@ In this project my goal was to create consistancy in design flow, and colour sch
 The main goal in this project was to showcase my ability to use CRUD functionality, (create, read, update and delete)
 
 ### Scope
-The scope of the project was to provide an application that the end-user could use in there day to day use and would respond primarily on a mobile device, and showcase my design, python, flask and mongodb skills to date along with html and css.
+The scope of the project was to provide an application that the end-user could use while considering what kawasaki motorcycle suites them best and would respond primarily on a mobile device, and showcase my design, python, flask and mongodb skills to date along with html and css.
 
 ### Structure
 The key aspects of the navbar was to have the navbar fixed to the top of the screen for easy access which allows the user to navigate wherever and whenever.  
