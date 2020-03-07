@@ -363,7 +363,7 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
 ## Credits
 
 ### Media
-I used [Ljndawson's site](http://ljndawson.org/2560x1440-white-wallpaper-hd.html) for my background image.
+I used [Pinterest](https://www.pinterest.com/) for my background image.
 
 ### Acknowledgements
 
