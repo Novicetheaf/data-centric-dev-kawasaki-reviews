@@ -43,7 +43,9 @@ In the footer there is some links using the appropriate icons, the email icon wh
 The user reviews, critic reviews, and add a review can be accessed by the navbar. Within the critic reviews section you have all of the set models from the pulled in from database, this schema does not allow the user to edit the critic reviews, as they're critic reviews and should remain on the site, the review details have been sourced from MCN motorcycle review website which is a popular go to site for looking up motorcycles reliablity, engine performance etc.
 The critic reviews section has the option to see more details on each particular model of kawasaki motorcycles. This option filters the particular model by its unique id and pulls in more details from the mongo schema.
 
-For the user reviews you are brought to all of the available reviews regardless of dupicates, if I had more time I would had the similar option for critic reviews, where you would see an overview of the user reviews, and go to see all particular models. This would then bring you to all the particular models and give you more details. 
+For the user reviews you are brought to all of the available reviews regardless of dupicates, if I had more time I would have used a similar option to what was used for critic reviews, where you would see an overview of the user reviews, and go to see all particular models. This would then bring you to all the particular models and give you more details. In the user reviews section the user can edit and delete any user review, if I had more time I would have added a popup option asking if the user was sure they wanted to delete the review.
+
+For adding the review the user can only access this by the navbar which means it is allways accessible.
 
 ### Skeleton
 
