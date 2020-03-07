@@ -146,15 +146,23 @@ no issues found, bar in mobile view the text output was too large to fit in one 
 ### Code validation Testing:
 [CSS Validation](https://github.com/novicetheaf/interactive-frontend-development-project/blob/master/assets/code-validation/css-validation.PNG)
 
-[HTML Validation](https://github.com/novicetheaf/interactive-frontend-development-project/blob/master/assets/code-validation/html-validation.PNG)
+[Index HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/index-page-validation.PNG)
 
-[Global JavaScript Validation](https://github.com/novicetheaf/interactive-frontend-development-project/blob/master/assets/code-validation/global-code-validation.PNG)
+[Critics Page HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/critics-page-validation.PNG)
 
-[Income Tax Calc JavaScript Validation](https://github.com/novicetheaf/interactive-frontend-development-project/blob/master/assets/code-validation/income-tax-code-validation.PNG)
+[Edit User HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/edit-user-page-validation.PNG)
 
-[MPG Calc JavaScript Validation](https://github.com/novicetheaf/interactive-frontend-development-project/blob/master/assets/code-validation/mpg-calc-code-validation.PNG)
+[User Page HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/user-page-validation.PNG)
+
+[Single Critic Page HTML Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/single-critic-page-validation.PNG)
+
+[Global JavaScript Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/general-js-validation.PNG)
 
 [Send Mail JavaScript Validation](https://github.com/novicetheaf/interactive-frontend-development-project/blob/master/assets/code-validation/send-mail-code-validation.PNG)
+
+[Python Validation](https://github.com/Novicetheaf/data-centric-dev-kawasaki-reviews/blob/master/static/code-validation/python-code-validation.PNG)
+
+[CSS Validation]()
 
 ### User stories
 For my user stories testing, I had to put myself in the shoes of the user, anyone looking for a quick way to calculate income or fuel consumption and employers/recruiters. The user will know straight away that this site is a toolkit, it solves and simplifies. 
