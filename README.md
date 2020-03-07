@@ -346,7 +346,7 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
 
     "overall_rating": "",
 
-    "name": "Jack",
+    "name": "",
 
     "ride_quality_and_brakes": "",
 
@@ -355,7 +355,7 @@ If you need anymore help in cloning this repo, then go to GitHub Help [page](htt
     "build_quality_and_reliability": "",
 
     "running_costs_and_value": "",
-    
+
     "review_summary": ""
 }
 
