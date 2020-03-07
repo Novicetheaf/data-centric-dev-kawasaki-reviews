@@ -236,9 +236,11 @@ In order to deploy your site to heroku you will need to follow these steps:
 - Scroll down and you will see 'Deployment method' on your left, from there choose 'Heroku Git'. This has all the commands you'll need to login to heroku via your IDE and deploy/push to heroku.
 
 - In your IDE cli you will need to first login, using command line interface.
-    Please type the following into you cli: $ heroku login
+    Please type the following into you cli: 
+    
+    $ heroku login
 
-- You will be asked to press any key from the cli, from this point you will want to do so, and then open the external or internal browsers which will log into heroku using the browser and then verify if it was successful.
+- You will be asked to press any key from the cli, from this point you will want to do so, and then an external or internal browser will open, which will log you into heroku using the browser or require you to do so if you are currently signed out on your browser, then verify if it was successful.
 
 - Assuming it has been successful, you will want to push/deploy to heroku.
 
@@ -276,7 +278,7 @@ In order to deploy your site to heroku you will need to follow these steps:
     - Go to the '**Heroku Dashboard**' and look for **Settings**.
     - Then click the option to **Reveal Config Vars**.
     - Enter in the variable names and their values
-        - Name: **YourSitesURIName** value: DATABASE URL HERE
+        - Name: **YourSitesURIName** value: Database url here
         - Name: **IP**  value: 0.0.0.0
         - Name: **Port** value: 5000
 
