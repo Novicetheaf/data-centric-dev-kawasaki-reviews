@@ -45,7 +45,7 @@ The critic reviews section has the option to see more details on each particular
 
 For the user reviews you are brought to all of the available reviews regardless of dupicates, if I had more time I would have used a similar option to what was used for critic reviews, where you would see an overview of the user reviews, and go to see all particular models. This would then bring you to all the particular models and give you more details. In the user reviews section the user can edit and delete any user review, if I had more time I would have added a popup option asking if the user was sure they wanted to delete the review.
 
-For adding the review the user can only access this by the navbar which means it is allways accessible, I achieved this by means of a popup modalto add a review.
+For adding the review the user can only access this by the navbar which means it is allways accessible, I achieved this by means of a popup modal to add a review.
 
 ### Skeleton
 
