@@ -26,7 +26,7 @@ Any recruiters who visits my web site will want to see if my site meets the requ
 
 ### Strategy
 
-For this project I wanted a motorcycle review site specifically for kawasaki motorcycles. My aim was to evoke a positive emotional response from the user when they visited my site, and provide them with information regarding certain models of kawasaki motorcycles, they coud read reviews from critics, or users, they could edit a user review, delete and add their very own review or a particular model from the set models in the schemea.
+For this project I wanted a motorcycle review site specifically for kawasaki motorcycles. My aim was to evoke a positive emotional response from the user when they visited my site, and provide them with information regarding certain models of kawasaki motorcycles, they coud read reviews from critics, or users, they could edit a user review, delete and add their very own review or a particular model from the set models in the schema.
 
 In this project my goal was to create consistancy in design flow, and colour schemes, as well as showing CRUD functionality. The web site is designed mobile first, in regards to content layout and css media queries, but the site does respond well on desktop, laptop and tablet screens.
 
@@ -36,11 +36,14 @@ The main goal in this project was to showcase my ability to use CRUD functionali
 The scope of the project was to provide an application that the end-user could use in there day to day use and would respond primarily on a mobile device, and showcase my design, python, flask and mongodb skills to date along with html and css.
 
 ### Structure
-The key aspects of the nvabar was to have the ability to dropdown the navbar and create an positive emotional response to the user, and give them links to my linkedin and github. It also allows them to fill out a contact me form and using Emailjs to send it to my email address. 
+The key aspects of the navbar was to have the navbar fixed to the top of the screen for easy access which allows the user to navigate wherever and whenever.  
 
-Also in the footer there is the same links, bar the conact me button, but this is replaced with an email icon which open up the modal again, and allows the user to contact me via navbar or footer. This provides constant access to any social links and forms of emailing me.
+In the footer there is some links using the appropriate icons, the email icon which opens up the modal to contact me, and allows the user to contact me via email.
 
-The web applications would use a dropdown button that would show the application if it was clicked on and hide it again to keep the main content clean and not to have the user scrolling down far to access the other application, or the footer. If you click on one application while the other one is still open it closes the other one, in order to keep one open at all times, and not to have two open at the same time. Within the applications the structure of both applications are similar but are clearly different also.
+The user reviews, critic reviews, and add a review can be accessed by the navbar. Within the critic reviews section you have all of the set models from the pulled in from database, this schema does not allow the user to edit the critic reviews, as they're critic reviews and should remain on the site, the review details have been sourced from MCN motorcycle review website which is a popular go to site for looking up motorcycles reliablity, engine performance etc.
+The critic reviews section has the option to see more details on each particular model of kawasaki motorcycles. This option filters the particular model by its unique id and pulls in more details from the mongo schema.
+
+For the user reviews you are brought to all of the available reviews regardless of dupicates, if I had more time I would had the similar option for critic reviews, where you would see an overview of the user reviews, and go to see all particular models. This would then bring you to all the particular models and give you more details. 
 
 ### Skeleton
 
