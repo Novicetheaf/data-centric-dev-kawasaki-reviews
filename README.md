@@ -200,27 +200,6 @@ Other then the above issue the site remains responsive throughout all devices th
 On Mobile screens the site responds the same as above.
 
 
-### Automation Testing: 
-
-- For this section I choose to use Selenium GUI based automation tests.
-
--  I choose automation testing to test the functionality of the website. Please see the seperate section on automation to run the tests and to get information on running the tests also. 
-
-[Automation Test Case, Files & How To Setup](https://github.com/Novicetheaf/interactive-frontend-development-project/tree/master/automation-tests)
-
-Selenium is the most popular and widely used open source gui testing platform. For my tests I was between two minds to use C# Selenium Web driver or the quick and easy Selenium IDE, which is an extension for you FireFox browser. Selenium Webdriver is more extendable and gives you more control over how your tests can interact and at what speed and they also generally make for more stable and reliable test cases. 
-
-The benefit of using Selenium IDE over the C# based Webdriver, is simply time, Selenium IDE is faster to get up off the ground, and generally is used for small scale applications, it is actully better then C# when it comes to simple sites that don't have to many varients, and not a lot of updates, 
-
-If I do get to build upon this application in the future I will probably transfer over to the Webdriver as it is far easier to make extensible, but for the moment considering the limited time constraints, this is the best solution.
-
-For the test cases for my automation I simply went through every element of functionality.
-
-Note on testing:
-- This did actully find one small issue where if the user adds numbers and letters, with numbers first and letters following, the result is 'NaN'.
-Fixed this issue was resolved by changing the javascript to check the length of charactors for input fields. 
-
-
 ## Deployment
 
 The project is hosted using heroku as github pages doesn't support mongodb.
