@@ -21,11 +21,11 @@ base_url = "https://raw.githubusercontent.com/Novicetheaf/"
 project_name = "data-centric-dev-kawasaki-reviews/"
 image_path = base_url + project_name + "master/static/images/"
 
-h2r_image = image_path + "2018-Kawasaki-Ninja-H2R1.jpg"
-vulcan_s_image = image_path + "2017-Kawasaki-Vulcan-S-ABS-Cafe-Review-5.jpg"
-versys_image = image_path + "2019-kawasaki-versys-1000-se-lt-corner.jpg"
-zx6r_image = image_path + "20_ZX6R-krt-hero1-scaled.jpeg"
-klr_650_image = image_path + "KawasakiKLR6502016_060-768x512.jpg"
+h2r_image = image_path + "h2r.jpg"
+vulcan_s_image = image_path + "vulcan-s.jpg"
+versys_image = image_path + "versys1000.jpg"
+zx6r_image = image_path + "zx-6r.jpeg"
+klr_650_image = image_path + "klr650.jpg"
 z900_image = image_path + "Z900.jpg"
 
 
