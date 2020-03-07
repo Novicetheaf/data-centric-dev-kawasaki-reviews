@@ -48,7 +48,7 @@ For the user reviews you are brought to all of the available reviews regardless 
 For adding the review the user can only access this by the navbar which means it is allways accessible, I achieved this by means of a popup modal to add a review.
 
 ### Skeleton
-
+To do still!!!!!!!!!!!!!!!!!!!!!!
 [Mobile Design wireframe - Income Tax Calculator](https://github.com/Novicetheaf/interactive-frontend-development-project/blob/master/wireframes/income-tax-calc-wireframe-mobile.pdf)
 
 [Mobile Design wireframe - Miles Per Gallon Calculator](https://github.com/Novicetheaf/interactive-frontend-development-project/blob/master/wireframes/mpg-calc-wireframe-mobile.pdf)
@@ -59,25 +59,20 @@ For adding the review the user can only access this by the navbar which means it
 
 ### Surface
 
-#### Red shades: 
-`rgb(102, 10, 10);`
-
-`rgba(138, 58, 58);`
-
-`rgb(199, 60, 60);`
-
-`rgb(196, 23, 23);`
-
-#### Cream/White shades: 
-`rgb(199, 235, 224);`
-
-`rgb(255, 245, 245);`
-
-`rgb(255, 255, 255);`
+#### Orange shades: 
+rgba(224, 87, 8, 0.82);
 
 #### Grey scaled shades are also included within the application.
 
-The colour scheme I was going for is this web application was to match up with a impactful contrast, yet pleasing to the eye, and above all evoking a positive response from the end-user.   
+#222425;
+
+#282929;
+
+#222425f5;
+
+rgba(196, 196, 196, 0.95);
+
+The colour scheme I was going for was to go with the background motorcycle image Kawasaki H2R. This created a pleasing to the eye, and above all evoking a positive response from the end-user.   
 
 ## Technologies
 
