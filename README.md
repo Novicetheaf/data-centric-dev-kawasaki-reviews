@@ -87,6 +87,10 @@ The colour scheme I was going for is this web application was to match up with a
 4. JavaScript
 5. JQuery (3.4.1)
 6. Emailjs (2.3.2)
+7. Python3
+8. Flask (1.1.1)
+9. PyMongo (3.10.1)
+10. Werkzeug (1.0.0)
 
 ## Features
  
