@@ -206,6 +206,44 @@ With regards to the above mentioned user stories & the usability of the web app,
 
 **This test goes through every functional aspect of the project through GUI based manual tesing**
 
+**Note:** When testing the navigation bar all links bring you to the intended locations. This is as expected.
+
+#### **Critic reviews actions** 
+
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| See more button | Click on element | Brings you to specific review  | as expected |
+| Back to critic reviews button | Click on element | Brings you back to critic reviews  | as expected |
+
+
+#### **User reviews actions** 
+
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| Edit button | Click on element | Brings you to the edit page  | as expected |
+| Delete button | Click on element | deletes the review | as expected |
+
+
+#### **Add review actions** 
+
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| Add review link in navbar | Click on element | Brings up the add review modal  | as expected |
+| models dropdown | Click on element and choose a model | no warning messages appear | as expected |
+| overall rating dropdown | Click on element and choose a rating | no warning messages appear | as expected |
+| name input field | type in a name | no warning messages appear | as expected |
+| ride quality and brakes dropdown | Click on element and choose a rating | no warning messages appear | as expected |
+| engine dropdown | Click on element and choose a rating | no warning messages appear | as expected |
+| build quality and reliability dropdown | Click on element and choose a rating | no warning messages appear | as expected |
+| running costs and value dropdown | Click on element and choose a rating | no warning messages appear | as expected |
+| review summary input field | type in a summary between 25 chars and 100 | no warning messages appear | as expected |
+| Add review button | Click on element | closes the modal and adds the review in user reviews | as expected |
+
+
+**Note:** for the input fields for summary and name, they re both required fields. Name field has no min value, but has a max of 25 characters. you will not be allowed to enter any more, this is the same for summary just that the minimum is 25 characters and the max is 100 characters. You won't be allowed to submit if they are blank, or is the summary is less then 25, and you simply won't be allowed to type anymore the the required amount(s).
+
+**Note:** for the edit review section the fields are the same, bar the edit button which simply updates the review that is currently open. The data from the particular review that is being edited is populated within each specific field, so there is no room for leaving a blank entry for dropdown, but they can be changed. You can however leave the input fields blank, and this will again bring up a warning saying they are required. The edit review section is not a modal so there is no close button, in order to go back to user reviews you need to use the navigation bar, other then this there is no difference found for the testing results.
+
 #### **Footer Secttion expected actions** 
 
 | Element Tested | Action | Expected outcome | Outcome |
