@@ -202,6 +202,31 @@ With regards to the above mentioned user stories & the usability of the web app,
 | Tablet(s) | The layout changes where the image stacks on top of the preview description and the overall description stack under the preview description while maintaining the scroll option  | as expected |
 | Mobile(s) | The layout remains the same as the tablet bar the content width, which is now 100% of the screen's width. There is no longer a scroll option for the detailed description | as expected |
 
+### **Functional testing** 
+
+**This test goes through every functional aspect of the project through GUI based manual tesing**
+
+#### **Footer Secttion expected actions** 
+
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| linkedin icon | clicks on linkedin icon | brings you to an external link | as expected |
+| github icon | clicks on github icon | brings you to an external link | as expected |
+| email icon | clicks on contact button | opens up a contact me modal | as expected |
+| input name | type in your name | no warning messages come up | as expected |
+| input email address | type in your email | no warning messages come up | as expected |
+| input message area | type in your message | no warning messages come up | as expected |
+| submit button | click send | message sent is displayed | as expected |
+
+#### **Footer Secttion unexpected actions** 
+
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| input name | leave this field blank | please fill this field | as expected |
+| input email address | leave blank or input a invalid email format | please fill this field at least 10 characters & must included @ and .com | as expected |
+| input message area | leave blank | please fill this field | as expected |
+
+
 ## Deployment
 
 The project is hosted using heroku as github pages doesn't support mongodb.
