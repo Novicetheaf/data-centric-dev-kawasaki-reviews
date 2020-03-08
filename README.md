@@ -171,7 +171,7 @@ As a recruiter or employer I want to find out with quick succession, whether thi
 With regards to the above mentioned user stories & the usability of the web app, the outcome for this test was successful, It met all expectations of ease of use. 
 
 
-### Responsive Flow Testing:
+### **Responsive Flow Testing:**
 
 #### Home Page
 
