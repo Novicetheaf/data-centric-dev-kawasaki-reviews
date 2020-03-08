@@ -264,6 +264,16 @@ With regards to the above mentioned user stories & the usability of the web app,
 | input email address | leave blank or input a invalid email format | please fill this field at least 10 characters & must included @ and .com | as expected |
 | input message area | leave blank | please fill this field | as expected |
 
+### **CRUD database testing** 
+
+| Element Tested | Action | Expected outcome | Outcome |
+| --- | --- | --- | --- |
+| Create option | use the add review form and submit to the database | the database receives the object and the site updates the content accordingly | as expected |
+| Read option | Click critic reviews, click user reviews | the site updates the content accordingly from the database and the cluster matches what is on the page | as expected |
+| Update option | use the edit review form and submit to the database | the database receives the object and the site updates the content accordingly | as expected |
+| Delete option | in user reviews click the delete option | the database receives the request to delete the entry and the site updates the content accordingly | as expected |
+
+**Note:** when testing the database the results on the site and on the database were cross referenced, all data matches as expected.
 
 ## Deployment
 
